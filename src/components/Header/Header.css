@@ -1,0 +1,45 @@
+header {
+    background-color: #0066cc;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1080px;
+    width: 80%;
+    margin: auto;
+    color: #fafafa;
+}
+
+header nav a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fafafa;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style-type: none;
+    margin: 0 2.4rem;
+    cursor: pointer;
+}
+
+header nav ul li a {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+li:hover {
+    filter: brightness(120%);
+}
+
+li:last-of-type {
+    margin-right: 0;
+}
