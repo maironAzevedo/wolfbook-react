@@ -1,18 +1,11 @@
-import React, { useContext, useState } from "react";
-import { useHistory } from "react-router-dom";
-import { Context } from "../../../../context/globalContext";
+import React, { useState } from "react";
+
 import Input from "../../../../common/Input/Input";
 import Button from "../../../../common/Button/Button";
 
-import "./LoginForm.css";
-
-function LoginForm() {
+function SignUpForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
-  const history = useHistory();
-
-  const { handleLogin } = useContext(Context);
 
   const user = {
     user: {
@@ -40,9 +33,10 @@ function LoginForm() {
             setInput={setPassword}
             type="password"
           />
-
-          <Button clickFunction={handleLogin(history, user)} label="Entrar" />
-
+          <Button
+            clickFunction={() => console.log("teste")}
+            label="Criar conta"
+          />
           <a href="">Esqueci minha senha</a>
         </fieldset>
       </div>
@@ -50,4 +44,4 @@ function LoginForm() {
   );
 }
 
-export default LoginForm;
+export default SignUpForm;

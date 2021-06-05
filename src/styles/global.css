@@ -1,3 +1,7 @@
 :root {
   font-family: "Poppins", sans-serif;
 }
+
+.img-home {
+  max-width: 850px;
+}

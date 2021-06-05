@@ -12,7 +12,7 @@ function HomePage() {
         <div className="text-dialog">
           <h1>Seja bem vindo ao Wolf-Book</h1>
           <h2>A rede social da IN-Junior</h2>
-          <WomanImage id="woman-image" />
+          <WomanImage className="img-home" />
         </div>
         <LoginForm />
       </div>

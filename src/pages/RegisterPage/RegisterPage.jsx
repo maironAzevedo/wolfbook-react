@@ -1,11 +1,18 @@
 import React from "react";
-import Header from "../../common/Header/Header";
+import { ReactComponent as Friendship } from '../../assets/wfh_6.svg'
+import SignUpForm from "./components/SignUpForm/SignUpForm";
+
 
 function RegisterPage() {
   return (
     <>
-      <Header />
-      <h1>Você está na página de registro (y)</h1>
+    <div className="page-wrapper">
+      <div className="text-dialog">
+          <h1>Falta pouco para você fazer parte da nossa família!</h1>
+          <Friendship className="img-home"/>
+      </div>   
+      <SignUpForm />
+    </div>
     </>
   );
 }
