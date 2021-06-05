@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { useHistory } from 'react-router-dom'
-import Header from '../../components/Header/Header'
+import Header from '../../common/Header/Header'
 
 import { Context } from '../../context/globalContext'
 

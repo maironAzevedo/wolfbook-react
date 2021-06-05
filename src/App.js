@@ -1,4 +1,3 @@
-import './App.css';
 import { GlobalProvider } from './context/globalContext';
 import Routes from './routes/routes';
 

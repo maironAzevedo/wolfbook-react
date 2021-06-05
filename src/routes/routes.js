@@ -10,8 +10,10 @@ import RegisterPage from '../pages/RegisterPage/RegisterPage'
 function CustomRoute({ isPrivate, ...rest }) {
     const { authenticated } = useContext(Context)
 
-    if(isPrivate && !authenticated) return <Redirect to='/' />
-
+    if(isPrivate && !authenticated) {
+        return <Redirect to='/login' />
+    }
+    
     return <Route {...rest}/>
 }
 
@@ -19,10 +21,10 @@ function Routes() {
     return (
         <Router>
             <Switch>
-                <CustomRoute exact path='/' component={HomePage}/>
+                <CustomRoute exact path='/login' component={HomePage}/>
                 <CustomRoute exact path='/register' component={RegisterPage} />
                 <CustomRoute exact path='/404' component={NotFound} />
-                <CustomRoute isPrivate exact path='/feed' component={Feed} />
+                <CustomRoute isPrivate exact path='/' component={Feed} />
                 <CustomRoute path ='/'><Redirect to='/404'/></CustomRoute>
             </Switch>
         </Router>

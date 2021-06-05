@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import { Context } from '../../../context/globalContext' 
+import { Context } from '../../../../context/globalContext' 
 
 import './LoginForm.css'
 
@@ -10,7 +10,7 @@ function LoginForm() {
 
     const history = useHistory()
 
-    const { handleLogin, authenticated } = useContext(Context);
+    const { handleLogin } = useContext(Context);
 
     const user = {
         "user": {

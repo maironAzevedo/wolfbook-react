@@ -13,7 +13,7 @@ function Header() {
                         <a href="/register">Registre-se</a>
                     </li>
                     <li>
-                        <a href="/feed">Feed</a>
+                        <a href="/">Feed</a>
                     </li>
                     <li>
                         <a href="/about-us">Quem Somos</a>
