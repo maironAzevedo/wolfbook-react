@@ -1,14 +1,14 @@
 .page-wrapper {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    height: 100vh;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  height: 100vh;
 }
 
 .text-dialog {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #woman-image {
-    max-width: 850px;
+  max-width: 850px;
 }
