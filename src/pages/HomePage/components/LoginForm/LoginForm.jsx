@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { Context } from '../../../../context/globalContext' 
+import Input from '../../../../common/Input/Input'
 
 import './LoginForm.css'
 
@@ -24,15 +25,20 @@ function LoginForm() {
             <div className="form">
                 <fieldset>
                     <h2>Realize seu Login</h2>
-
-                    <div className="input-area">
-                        <label htmlFor="email">Seu Email:</label>
-                        <input onChange={(e) => setEmail(e.target.value)} value={email} type="text" name="email" id="0" />
-                    </div>
-                    <div className="input-area">
-                        <label htmlFor="password">Sua Senha:</label>
-                        <input onChange={(e) => setPassword(e.target.value)} value={password} type="password" name="password" id="1" />
-                    </div>
+                    <Input
+                        key="email"
+                        placeholder="Seu E-mail"
+                        input={email}
+                        setInput={setEmail}
+                        type="text"    
+                    />
+                    <Input
+                        key="password"
+                        placeholder="Sua senha"
+                        input={password}
+                        setInput={setPassword}
+                        type="password"    
+                    />
                     <button onClick={() => handleLogin(history, user)}>Acessar</button>
                     <a href="">Esqueci minha senha</a>
                 </fieldset>
