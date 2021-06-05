@@ -1,0 +1,15 @@
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin: auto;
+}
+
+.text-dialog {
+    display: flex;
+    flex-direction: column;
+}
+
+#woman-image {
+    max-width: 850px;
+    align-self: center;
+}

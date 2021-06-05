@@ -21,7 +21,7 @@ function LoginForm() {
 
     return (
         <>
-            <div className="page-wrapper">
+            <div className="form">
                 <fieldset>
                     <h2>Realize seu Login</h2>
 
